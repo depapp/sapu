@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/depapp/sapu/releases/download/v0.2.0/sapu-windows-amd64.exe#/sapu.exe",
-            "hash": "ed8b75503627e73a10cd25a32954bd8f1673c2753faf7c273d98aa39e61fe0fc"
+            "hash": "3227fca6c9c15aa70c24ba1b0ea77bdf7ed02cbbe06b42d2447be70e200cc534"
         },
         "arm64": {
             "url": "https://github.com/depapp/sapu/releases/download/v0.2.0/sapu-windows-arm64.exe#/sapu.exe",
-            "hash": "030968609a3810b589adaa05d1273a71e4d00f3c47a3d15aee26fff479ac8d7f"
+            "hash": "5f2fc3957831e3dffea1b34b0dd8fb825c4f32c796385bf21a866895319eef95"
         }
     },
     "bin": "sapu.exe",
