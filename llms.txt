@@ -1,0 +1,20 @@
+# Sapu
+
+> Free, open-source CLI that cleans, debloats and monitors an Android phone from a computer over adb, without root. Every removing command has a `--dry-run` preview; files go to a trash folder on the phone, never deleted outright.
+
+Source: https://github.com/depapp/sapu
+
+## Install for the user
+
+1. Make sure `adb` exists (`brew install android-platform-tools` on macOS, `scoop install adb` on Windows, `sudo apt install adb` on Debian/Ubuntu).
+2. Install Sapu: `curl -fsSL https://raw.githubusercontent.com/depapp/sapu/main/install.sh | sh` (checks SHA256SUMS), or `go install github.com/depapp/sapu@latest`, or download a binary from https://github.com/depapp/sapu/releases.
+3. On the phone: Settings > About > tap "Build number" 7 times, then Developer options > USB debugging. Plug it in and accept the prompt.
+4. Run `sapu devices` to confirm, then `sapu`.
+
+## Rules for agents
+
+- Read first: `sapu status --json`, `sapu analyze --json`, `sapu uninstall --list --json`, `sapu history --json`, `sapu probe` and every `--dry-run` are safe to run without asking.
+- `sapu update` replaces the binary with the latest GitHub release after verifying its SHA256; `sapu update --check` only reports. Needs no phone.
+- When a preinstalled app is missing from Sapu's rules, `sapu probe` produces an anonymized report the user can paste into https://github.com/depapp/sapu/issues/new.
+- Show the dry-run result and get the user's explicit consent before running `sapu clean`, `sapu optimize`, `sapu uninstall` or `sapu trash empty`. `sapu optimize` removes nothing (it compiles apps and runs Android's bg-dexopt job), but it takes minutes.
+- Never fall back to `adb shell rm` or `adb shell pm uninstall` for something Sapu skipped. A skip is Sapu's answer.

@@ -1,0 +1,165 @@
+# Preinstalled apps that are safe to remove for the current user (pm uninstall --user 0).
+# "pm uninstall -k --user 0" keeps the APK on the system partition, so the app can be
+# restored with "cmd package install-existing <package>", which `sapu uninstall` offers.
+# risk: safe (no system function depends on it) | medium (a feature the user may rely on).
+# note_id: optional Indonesian note; omitted when the note is just an app name.
+# Seeded from publicly known lists (Universal Android Debloater, OEM forums); every row
+# still needs confirmation from real phones. Open an issue with `sapu probe` output.
+- {package: com.google.android.youtube, vendor: google, risk: medium, note: "YouTube; reinstallable from Play", note_id: "YouTube; bisa dipasang lagi dari Play"}
+- {package: com.google.android.apps.youtube.music, vendor: google, risk: safe, note: "YouTube Music"}
+- {package: com.google.android.videos, vendor: google, risk: safe, note: "Google TV / Play Movies", note_id: "Google TV / Play Film"}
+- {package: com.google.android.apps.tachyon, vendor: google, risk: safe, note: "Google Meet (Duo)"}
+- {package: com.google.android.apps.magazines, vendor: google, risk: safe, note: "Google News"}
+- {package: com.google.android.apps.podcasts, vendor: google, risk: safe, note: "Google Podcasts (discontinued)", note_id: "Google Podcasts (sudah dihentikan)"}
+- {package: com.google.android.apps.docs, vendor: google, risk: medium, note: "Google Drive"}
+- {package: com.google.android.apps.docs.editors.docs, vendor: google, risk: safe, note: "Google Docs"}
+- {package: com.google.android.apps.docs.editors.sheets, vendor: google, risk: safe, note: "Google Sheets"}
+- {package: com.google.android.apps.docs.editors.slides, vendor: google, risk: safe, note: "Google Slides"}
+- {package: com.google.ar.lens, vendor: google, risk: safe, note: "Google Lens"}
+- {package: com.google.android.apps.subscriptions.red, vendor: google, risk: safe, note: "Google One"}
+- {package: com.google.android.apps.googleassistant, vendor: google, risk: medium, note: "Google Assistant"}
+- {package: com.google.android.apps.wellbeing, vendor: google, risk: medium, note: "Digital Wellbeing", note_id: "Kesejahteraan Digital"}
+- {package: com.google.android.apps.maps, vendor: google, risk: medium, note: "Google Maps; reinstallable from Play", note_id: "Google Maps; bisa dipasang lagi dari Play"}
+- {package: com.google.android.apps.photos, vendor: google, risk: medium, note: "Google Photos; check that backup is complete first", note_id: "Google Foto; pastikan cadangan sudah lengkap dulu"}
+- {package: com.google.android.gm, vendor: google, risk: medium, note: "Gmail; reinstallable from Play", note_id: "Gmail; bisa dipasang lagi dari Play"}
+- {package: com.google.android.calendar, vendor: google, risk: medium, note: "Google Calendar"}
+- {package: com.google.android.deskclock, vendor: google, risk: medium, note: "Clock; alarms stop working without a replacement", note_id: "Jam; alarm berhenti bekerja tanpa pengganti"}
+- {package: com.google.android.feedback, vendor: google, risk: safe, note: "Market Feedback Agent", note_id: "Agen umpan balik Play Store"}
+- {package: com.google.android.printservice.recommendation, vendor: google, risk: safe, note: "Print service recommendations", note_id: "Rekomendasi layanan cetak"}
+- {package: com.google.android.apps.walletnfcrel, vendor: google, risk: medium, note: "Google Wallet"}
+- {package: com.google.android.projection.gearhead, vendor: google, risk: medium, note: "Android Auto"}
+- {package: com.facebook.katana, vendor: preload, risk: safe, note: "Facebook (preinstalled)", note_id: "Facebook (prainstal)"}
+- {package: com.facebook.appmanager, vendor: preload, risk: safe, note: "Facebook App Manager", note_id: "Pengelola aplikasi Facebook"}
+- {package: com.facebook.services, vendor: preload, risk: safe, note: "Facebook Services", note_id: "Layanan Facebook"}
+- {package: com.facebook.system, vendor: preload, risk: safe, note: "Facebook App Installer", note_id: "Pemasang aplikasi Facebook"}
+- {package: com.microsoft.skydrive, vendor: preload, risk: safe, note: "OneDrive"}
+- {package: com.microsoft.office.outlook, vendor: preload, risk: safe, note: "Outlook"}
+- {package: com.microsoft.office.officehubrow, vendor: preload, risk: safe, note: "Microsoft 365"}
+- {package: com.linkedin.android, vendor: preload, risk: safe, note: "LinkedIn"}
+- {package: com.netflix.mediaclient, vendor: preload, risk: safe, note: "Netflix"}
+- {package: com.netflix.partner.activation, vendor: preload, risk: safe, note: "Netflix activation", note_id: "Aktivasi Netflix"}
+- {package: com.spotify.music, vendor: preload, risk: safe, note: "Spotify"}
+- {package: com.booking, vendor: preload, risk: safe, note: "Booking.com"}
+- {package: com.amazon.appmanager, vendor: preload, risk: safe, note: "Amazon app manager", note_id: "Pengelola aplikasi Amazon"}
+- {package: com.samsung.android.bixby.agent, vendor: samsung, risk: safe, note: "Bixby Voice"}
+- {package: com.samsung.android.bixby.wakeup, vendor: samsung, risk: safe, note: "Bixby wake-up", note_id: "Pembangun Bixby"}
+- {package: com.samsung.android.bixbyvision.framework, vendor: samsung, risk: safe, note: "Bixby Vision"}
+- {package: com.samsung.android.visionintelligence, vendor: samsung, risk: safe, note: "Bixby Vision intelligence", note_id: "Kecerdasan Bixby Vision"}
+- {package: com.samsung.android.app.spage, vendor: samsung, risk: safe, note: "Samsung Free / Samsung Daily"}
+- {package: com.samsung.android.game.gamehome, vendor: samsung, risk: safe, note: "Game Launcher"}
+- {package: com.samsung.android.game.gametools, vendor: samsung, risk: safe, note: "Game Tools", note_id: "Alat game"}
+- {package: com.samsung.android.arzone, vendor: samsung, risk: safe, note: "AR Zone"}
+- {package: com.samsung.android.aremoji, vendor: samsung, risk: safe, note: "AR Emoji"}
+- {package: com.samsung.android.ardrawing, vendor: samsung, risk: safe, note: "AR Doodle"}
+- {package: com.samsung.android.app.tips, vendor: samsung, risk: safe, note: "Tips"}
+- {package: com.samsung.android.kidsinstaller, vendor: samsung, risk: safe, note: "Samsung Kids installer", note_id: "Pemasang Samsung Kids"}
+- {package: com.samsung.android.mateagent, vendor: samsung, risk: safe, note: "Galaxy Wearable agent", note_id: "Agen Galaxy Wearable"}
+- {package: com.samsung.android.app.watchmanagerstub, vendor: samsung, risk: safe, note: "Galaxy Wearable stub", note_id: "Stub Galaxy Wearable"}
+- {package: com.samsung.android.smartmirroring, vendor: samsung, risk: medium, note: "Smart View"}
+- {package: com.samsung.android.app.reminder, vendor: samsung, risk: medium, note: "Reminder", note_id: "Pengingat"}
+- {package: com.samsung.android.calendar, vendor: samsung, risk: medium, note: "Samsung Calendar"}
+- {package: com.sec.android.app.sbrowser, vendor: samsung, risk: medium, note: "Samsung Internet"}
+- {package: com.samsung.android.app.notes, vendor: samsung, risk: medium, note: "Samsung Notes"}
+- {package: com.sec.android.app.samsungapps, vendor: samsung, risk: medium, note: "Galaxy Store (needed for Samsung app updates)", note_id: "Galaxy Store (dibutuhkan untuk pembaruan aplikasi Samsung)"}
+- {package: com.samsung.android.scloud, vendor: samsung, risk: medium, note: "Samsung Cloud"}
+- {package: com.samsung.android.oneconnect, vendor: samsung, risk: medium, note: "SmartThings"}
+- {package: com.samsung.android.voc, vendor: samsung, risk: safe, note: "Samsung Members"}
+- {package: com.samsung.android.app.sharelive, vendor: samsung, risk: safe, note: "Quick Share (legacy Link Sharing)", note_id: "Quick Share (Link Sharing lama)"}
+- {package: com.samsung.android.privateshare, vendor: samsung, risk: safe, note: "Private Share", note_id: "Berbagi privat"}
+- {package: com.samsung.android.ipsgeofence, vendor: samsung, risk: safe, note: "IPS geofence", note_id: "Geofence IPS"}
+- {package: com.samsung.android.service.stplatform, vendor: samsung, risk: safe, note: "SmartThings platform", note_id: "Platform SmartThings"}
+- {package: com.miui.msa.global, vendor: xiaomi, risk: safe, note: "MSA (system ads)", note_id: "MSA (iklan sistem)"}
+- {package: com.miui.analytics, vendor: xiaomi, risk: safe, note: "Analytics", note_id: "Analitik"}
+- {package: com.xiaomi.mipicks, vendor: xiaomi, risk: safe, note: "GetApps store", note_id: "Toko GetApps"}
+- {package: com.miui.videoplayer, vendor: xiaomi, risk: safe, note: "Mi Video"}
+- {package: com.miui.player, vendor: xiaomi, risk: safe, note: "Mi Music"}
+- {package: com.mi.globalbrowser, vendor: xiaomi, risk: safe, note: "Mi Browser"}
+- {package: com.miui.cleanmaster, vendor: xiaomi, risk: safe, note: "Cleaner (pushes ads)", note_id: "Cleaner (menampilkan iklan)"}
+- {package: com.miui.bugreport, vendor: xiaomi, risk: safe, note: "Bug report", note_id: "Laporan bug"}
+- {package: com.xiaomi.glgm, vendor: xiaomi, risk: safe, note: "Games", note_id: "Game"}
+- {package: com.miui.yellowpage, vendor: xiaomi, risk: safe, note: "Yellow pages", note_id: "Buku kuning"}
+- {package: com.miui.hybrid, vendor: xiaomi, risk: safe, note: "Quick apps", note_id: "Aplikasi cepat"}
+- {package: com.miui.hybrid.accessory, vendor: xiaomi, risk: safe, note: "Quick apps accessory", note_id: "Aksesori aplikasi cepat"}
+- {package: com.xiaomi.joyose, vendor: xiaomi, risk: safe, note: "Joyose (game booster telemetry)", note_id: "Joyose (telemetri game booster)"}
+- {package: com.miui.weather2, vendor: xiaomi, risk: medium, note: "Weather", note_id: "Cuaca"}
+- {package: com.miui.compass, vendor: xiaomi, risk: safe, note: "Compass", note_id: "Kompas"}
+- {package: com.miui.fm, vendor: xiaomi, risk: safe, note: "FM Radio"}
+- {package: com.xiaomi.midrop, vendor: xiaomi, risk: safe, note: "ShareMe"}
+- {package: com.xiaomi.mi_connect_service, vendor: xiaomi, risk: medium, note: "Mi Connect"}
+- {package: com.heytap.browser, vendor: oppo, risk: safe, note: "Browser", note_id: "Peramban"}
+- {package: com.heytap.market, vendor: oppo, risk: medium, note: "App Market"}
+- {package: com.heytap.pictorial, vendor: oppo, risk: safe, note: "Glance lock screen", note_id: "Layar kunci Glance"}
+- {package: com.heytap.music, vendor: oppo, risk: safe, note: "Music", note_id: "Musik"}
+- {package: com.heytap.themestore, vendor: oppo, risk: safe, note: "Theme Store"}
+- {package: com.coloros.gamespaceui, vendor: oppo, risk: safe, note: "Game Space"}
+- {package: com.coloros.video, vendor: oppo, risk: safe, note: "Video"}
+- {package: com.coloros.compass2, vendor: oppo, risk: safe, note: "Compass", note_id: "Kompas"}
+- {package: com.oppo.market, vendor: oppo, risk: medium, note: "App Market (legacy)", note_id: "App Market (lama)"}
+- {package: com.oppo.quicksearchbox, vendor: oppo, risk: safe, note: "Global search", note_id: "Pencarian global"}
+- {package: com.vivo.browser, vendor: vivo, risk: safe, note: "Browser", note_id: "Peramban"}
+- {package: com.vivo.appstore, vendor: vivo, risk: medium, note: "V-Appstore"}
+- {package: com.vivo.game, vendor: vivo, risk: safe, note: "Game Center"}
+- {package: com.vivo.hiboard, vendor: vivo, risk: safe, note: "Jovi Home"}
+- {package: com.vivo.easyshare, vendor: vivo, risk: safe, note: "EasyShare"}
+- {package: com.vivo.video.floating, vendor: vivo, risk: safe, note: "Video floating", note_id: "Video melayang"}
+- {package: com.vivo.assistant, vendor: vivo, risk: safe, note: "Jovi assistant", note_id: "Asisten Jovi"}
+- {package: com.vivo.browser.feeds, vendor: vivo, risk: safe, note: "Browser feeds", note_id: "Feed peramban"}
+- {package: com.transsion.phoenix, vendor: transsion, risk: safe, note: "Phoenix Browser"}
+- {package: com.transsnet.store, vendor: transsion, risk: medium, note: "Palm Store"}
+- {package: com.talpa.hibrowser, vendor: transsion, risk: safe, note: "Hi Browser"}
+- {package: com.transsion.aivoiceassistant, vendor: transsion, risk: safe, note: "Ella voice assistant", note_id: "Asisten suara Ella"}
+- {package: com.transsion.magazineservice, vendor: transsion, risk: safe, note: "Magazine lock screen", note_id: "Layar kunci majalah"}
+- {package: net.bat.store, vendor: transsion, risk: safe, note: "AHA Games"}
+- {package: com.transsion.videoplayer, vendor: transsion, risk: safe, note: "Visha video", note_id: "Video Visha"}
+- {package: com.transsion.plat.appupdate, vendor: transsion, risk: safe, note: "App update service", note_id: "Layanan pembaruan aplikasi"}
+- {package: com.transsion.palmstore.ps, vendor: transsion, risk: safe, note: "Palm Store service", note_id: "Layanan Palm Store"}
+- {package: com.transsion.aha.games, vendor: transsion, risk: safe, note: "AHA Games"}
+- {package: com.transsion.boomplayer, vendor: transsion, risk: safe, note: "Boomplay"}
+# Second batch, from the Universal Android Debloater lists for the same vendors (still unconfirmed on real phones).
+- {package: com.samsung.android.app.routines, vendor: samsung, risk: medium, note: "Bixby Routines / Modes and Routines", note_id: "Bixby Routines / Mode dan Rutinitas"}
+- {package: com.samsung.android.bixby.service, vendor: samsung, risk: safe, note: "Bixby service", note_id: "Layanan Bixby"}
+- {package: com.sec.android.app.kidshome, vendor: samsung, risk: safe, note: "Samsung Kids"}
+- {package: com.samsung.android.email.provider, vendor: samsung, risk: medium, note: "Samsung Email"}
+- {package: com.samsung.android.wellbeing, vendor: samsung, risk: medium, note: "Digital Wellbeing (Samsung)", note_id: "Kesejahteraan Digital (Samsung)"}
+- {package: com.samsung.android.livestickers, vendor: samsung, risk: safe, note: "Live stickers", note_id: "Stiker bergerak"}
+- {package: com.samsung.android.stickercenter, vendor: samsung, risk: safe, note: "Sticker center", note_id: "Pusat stiker"}
+- {package: com.samsung.android.mdx, vendor: samsung, risk: medium, note: "Link to Windows"}
+- {package: com.microsoft.appmanager, vendor: samsung, risk: medium, note: "Link to Windows service", note_id: "Layanan Link to Windows"}
+- {package: com.samsung.android.tvplus, vendor: samsung, risk: safe, note: "Samsung TV Plus"}
+- {package: com.samsung.android.beaconmanager, vendor: samsung, risk: safe, note: "Beacon manager (location ads)", note_id: "Pengelola beacon (iklan lokasi)"}
+- {package: com.samsung.sree, vendor: samsung, risk: safe, note: "Samsung Global Goals"}
+- {package: com.miui.miservice, vendor: xiaomi, risk: safe, note: "Services & Feedback", note_id: "Layanan & Umpan Balik"}
+- {package: com.miui.notes, vendor: xiaomi, risk: medium, note: "Mi Notes; export notes first", note_id: "Mi Notes; ekspor catatan dulu"}
+- {package: com.miui.screenrecorder, vendor: xiaomi, risk: medium, note: "Screen Recorder", note_id: "Perekam layar"}
+- {package: com.xiaomi.scanner, vendor: xiaomi, risk: safe, note: "Scanner", note_id: "Pemindai"}
+- {package: com.miui.android.fashiongallery, vendor: xiaomi, risk: safe, note: "Wallpaper Carousel", note_id: "Karusel wallpaper"}
+- {package: com.miui.cloudservice, vendor: xiaomi, risk: medium, note: "Mi Cloud; check backups first", note_id: "Mi Cloud; periksa cadangan dulu"}
+- {package: com.miui.cloudbackup, vendor: xiaomi, risk: medium, note: "Mi Cloud backup", note_id: "Cadangan Mi Cloud"}
+- {package: com.xiaomi.calendar, vendor: xiaomi, risk: medium, note: "Mi Calendar"}
+- {package: com.miui.huanji, vendor: xiaomi, risk: safe, note: "Mi Mover"}
+- {package: com.miui.touchassistant, vendor: xiaomi, risk: safe, note: "Quick Ball"}
+- {package: com.mi.health, vendor: xiaomi, risk: safe, note: "Mi Health"}
+- {package: com.mipay.wallet.in, vendor: xiaomi, risk: safe, note: "Mi Pay (India)"}
+- {package: com.coloros.assistantscreen, vendor: oppo, risk: medium, note: "Smart Assistant (left home screen)", note_id: "Smart Assistant (layar utama paling kiri)"}
+- {package: com.heytap.cloud, vendor: oppo, risk: medium, note: "HeyTap Cloud; check backups first", note_id: "HeyTap Cloud; periksa cadangan dulu"}
+- {package: com.heytap.usercenter, vendor: oppo, risk: medium, note: "HeyTap account", note_id: "Akun HeyTap"}
+- {package: com.nearme.gamecenter, vendor: oppo, risk: safe, note: "Game Center"}
+- {package: com.coloros.childrenspace, vendor: oppo, risk: safe, note: "Kid Space"}
+- {package: com.oppo.operationManual, vendor: oppo, risk: safe, note: "User guide", note_id: "Panduan pengguna"}
+- {package: com.heytap.quicksearchbox, vendor: oppo, risk: safe, note: "HeyTap search", note_id: "Pencarian HeyTap"}
+- {package: com.heytap.speechassist, vendor: oppo, risk: medium, note: "Breeno voice assistant", note_id: "Asisten suara Breeno"}
+- {package: com.coloros.healthcheck, vendor: oppo, risk: safe, note: "Health check (diagnostics)", note_id: "Pemeriksaan kesehatan perangkat (diagnostik)"}
+- {package: com.coloros.smartdrive, vendor: oppo, risk: safe, note: "Riding / driving mode", note_id: "Mode berkendara"}
+- {package: com.vivo.gamecube, vendor: vivo, risk: safe, note: "Game Cube"}
+- {package: com.vivo.website, vendor: vivo, risk: safe, note: "vivo.com"}
+- {package: com.vivo.ewarranty, vendor: vivo, risk: safe, note: "e-Warranty"}
+- {package: com.vivo.Tips, vendor: vivo, risk: safe, note: "Tips"}
+- {package: com.vivo.favorite, vendor: vivo, risk: safe, note: "Favorites", note_id: "Favorit"}
+- {package: com.vivo.childrenmode, vendor: vivo, risk: safe, note: "Children mode", note_id: "Mode anak"}
+- {package: com.vivo.magazine, vendor: vivo, risk: safe, note: "Lock screen magazine", note_id: "Majalah layar kunci"}
+- {package: com.hoffnung, vendor: transsion, risk: safe, note: "AHA Games"}
+- {package: com.infinix.xshare, vendor: transsion, risk: medium, note: "XShare file transfer", note_id: "Transfer berkas XShare"}
+- {package: com.transsion.notebook, vendor: transsion, risk: medium, note: "Notes; export notes first", note_id: "Notes; ekspor catatan dulu"}
+- {package: com.talpa.translate, vendor: transsion, risk: safe, note: "Hi Translate"}
+- {package: com.transsion.healthlife, vendor: transsion, risk: safe, note: "Health Life"}
+- {package: com.transsion.smartpanel, vendor: transsion, risk: medium, note: "Smart Panel edge sidebar", note_id: "Bilah samping Smart Panel"}

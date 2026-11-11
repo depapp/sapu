@@ -1,0 +1,1 @@
+Ukuran dan tanggal terakhir dibuka per aplikasi di tab Aplikasi, tab Optimalkan baru (kompilasi speed-profile untuk aplikasi tersering, bg-dexopt, audit baterai), terjemahan Indonesia, build rilis bertanda tangan.

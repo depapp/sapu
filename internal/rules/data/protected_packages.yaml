@@ -1,0 +1,164 @@
+# Packages Sapu never uninstalls or disables, whatever the user selects.
+# Exact names or prefixes (ending in "."). Data only; the policy lives in rules.go.
+# Sources: AOSP core, Google Play services, OEM launchers/dialers/settings.
+# Add an entry with the reason; a phone that does not boot is not recoverable from a CLI.
+exact:
+  - android
+  - com.android.vending            # Play Store
+  - com.google.android.gms          # Play services
+  - com.google.android.gsf
+  - com.google.android.webview
+  - com.google.android.trichromelibrary
+  - com.google.android.packageinstaller
+  - com.google.android.permissioncontroller
+  - com.google.android.ext.services
+  - com.google.android.ext.shared
+  - com.google.android.inputmethod.latin   # Gboard: removing the only keyboard locks the user out
+  - com.google.android.dialer
+  - com.google.android.contacts
+  - com.google.android.apps.messaging
+  - com.google.android.apps.nexuslauncher
+  - com.google.android.setupwizard
+  - com.google.android.gms.supervision
+  # Pixel / Google system pieces found by `sapu probe` on an Android 14 image.
+  - com.google.android.as                 # Android System Intelligence (Live Caption, Now Playing, smart text)
+  - com.google.android.as.oss
+  - com.google.android.bluetooth
+  - com.google.android.sdksandbox
+  - com.google.android.ondevicepersonalization.services
+  - com.google.android.federatedcompute
+  - com.google.android.connectivity.resources
+  - com.google.android.connectivity.resources.goldfish.overlay
+  - com.google.android.uwb.resources
+  - com.google.android.telephony.satellite
+  - com.google.android.healthconnect.controller
+  - com.google.android.settings.intelligence   # Settings search
+  - com.google.android.partnersetup
+  - com.google.android.onetimeinitializer
+  - com.google.android.devicelockcontroller
+  - com.google.android.nearby.halfsheet         # Fast Pair UI
+  - com.google.android.apps.restore             # data transfer during setup
+  - com.google.android.apps.wallpaper
+  - com.google.android.apps.wallpaper.nexus
+  - com.google.android.apps.customization.pixel
+  - com.google.android.soundpicker
+  - com.google.android.tag                      # NFC tag handling
+  - com.google.android.markup                   # screenshot editor
+  - com.google.android.googlesdksetup
+  - com.google.android.systemui.gxoverlay
+  - com.google.android.googlequicksearchbox     # Google app: Pixel launcher search and Assistant depend on it
+  - com.samsung.android.dialer
+  - com.samsung.android.messaging
+  - com.samsung.android.contacts
+  - com.samsung.android.honeyboard             # Samsung keyboard
+  - com.sec.android.app.launcher
+  - com.samsung.android.app.settings.bixby
+  - com.samsung.android.incallui
+  - com.samsung.android.lool                   # Device care
+  - com.samsung.android.sm.devicesecurity
+  - com.miui.home
+  - com.miui.securitycenter                    # hosts permission UI on MIUI/HyperOS
+  - com.miui.securityadd
+  - com.miui.guardprovider
+  - com.android.mms
+  - com.android.contacts
+  - com.android.incallui
+  - com.oppo.launcher
+  - com.coloros.securitypermission
+  - com.coloros.safecenter
+  - com.bbk.launcher2
+  - com.vivo.permissionmanager
+  - com.vivo.abe
+  - com.transsion.XOSLauncher
+  - com.transsion.hilauncher
+  - com.transsion.itel.launcher
+  - com.transsion.phonemaster                  # hosts permissions on HiOS/XOS
+  - com.sec.android.app.camera
+  - com.sec.android.app.myfiles
+  - com.sec.android.gallery3d
+  - com.sec.android.app.clockpackage
+  - com.sec.android.inputmethod
+  - com.sec.android.app.popupcalculator
+  - com.samsung.android.app.contacts
+  - com.coloros.phonemanager
+  - com.coloros.filemanager
+  - com.coloros.gallery3d
+  - com.coloros.alarmclock
+  - com.coloros.calculator
+  - com.oppo.camera
+  - com.oplus.camera
+  - com.coloros.ocrscanner
+  - com.vivo.gallery
+  - com.vivo.filemanager
+  - com.vivo.camera
+  - com.android.BBKClock
+  - com.vivo.settings
+  - com.bbk.calendar
+  - com.vivo.smartmultiwindow
+  - com.vivo.upslide
+  - com.vivo.sim.contacts
+prefixes:
+  - com.sec.android.provider.
+  - com.sec.android.daemonapp
+  - com.coloros.systemui
+  - com.oppo.ota
+  - com.vivo.systemui
+  - com.vivo.upgrade
+  - com.bbk.account
+  - com.bbk.cloud
+  - com.bbk.theme
+  - com.vivo.safecenter
+  - com.vivo.securedaemonservice
+  - com.vivo.daemonService
+  - com.android.                   # AOSP framework apps (Settings, SystemUI, providers, ...)
+  - com.qualcomm.
+  - com.qti.
+  - com.mediatek.
+  - com.google.android.overlay.
+  - com.google.mainline.
+  - com.google.android.modulemetadata
+  - com.google.android.captiveportallogin
+  - com.google.android.networkstack
+  - com.google.android.cellbroadcast
+  - com.google.android.wifi.
+  - com.google.android.hotspot2.
+  - com.google.android.documentsui
+  - com.google.android.providers.media.module
+  - com.google.android.apps.carrier.
+  - com.google.android.ims
+  - com.google.android.euicc
+  - com.google.android.odad
+  - com.google.android.safetycenter
+  - com.google.android.adservices
+  - com.google.android.rkpdapp
+  - com.google.android.health.connect
+  - com.google.android.configupdater
+  - com.google.android.tts
+  - com.google.android.marvin.talkback       # accessibility
+  - com.samsung.android.providers.
+  - com.samsung.android.knox.
+  - com.samsung.android.app.telephonyui
+  - com.sec.android.provider.
+  - com.sec.imsservice
+  - com.sec.epdg
+  - com.samsung.android.themestore
+  - com.samsung.android.mdm
+  - com.samsung.android.wifi.
+  - com.samsung.android.networkstack
+  - com.samsung.ipservice
+  - com.samsung.android.server.
+  - com.miui.system
+  - com.miui.core
+  - com.miui.rom
+  - com.xiaomi.finddevice
+  - com.xiaomi.xmsf
+  - com.miui.powerkeeper
+  - com.miui.packageinstaller
+  - com.oplus.
+  - com.heytap.openid
+  - com.transsion.carlcare
+  - com.transsion.magicfont
+  - com.transsion.resolver
+  - com.transsion.faceid
+  - com.transsion.systemui
+  - com.transsion.hiosos

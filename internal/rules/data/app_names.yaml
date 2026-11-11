@@ -1,0 +1,138 @@
+# Display names for package ids, so lists read "YouTube" instead of com.google.android.youtube.
+# adb cannot read an APK's label without pulling it, so this is a curated map; a package that
+# is missing here is shown by its id. Add rows for apps people meet in `sapu uninstall`.
+com.google.android.youtube: YouTube
+com.google.android.apps.youtube.music: YouTube Music
+com.google.android.videos: Google TV
+com.google.android.apps.tachyon: Google Meet
+com.google.android.apps.magazines: Google News
+com.google.android.apps.podcasts: Google Podcasts
+com.google.android.apps.docs: Google Drive
+com.google.android.apps.docs.editors.docs: Google Docs
+com.google.android.apps.docs.editors.sheets: Google Sheets
+com.google.android.apps.docs.editors.slides: Google Slides
+com.google.android.apps.wellbeing: Digital Wellbeing
+com.google.android.apps.maps: Google Maps
+com.google.android.apps.photos: Google Photos
+com.google.android.gm: Gmail
+com.google.android.calendar: Google Calendar
+com.google.android.deskclock: Clock
+com.google.android.feedback: Google Feedback
+com.google.android.printservice.recommendation: Print Service Recommendation
+com.google.android.projection.gearhead: Android Auto
+com.google.android.googlequicksearchbox: Google
+com.google.android.gms: Google Play services
+com.android.vending: Google Play Store
+com.android.chrome: Chrome
+com.google.android.inputmethod.latin: Gboard
+com.google.android.dialer: Phone
+com.google.android.contacts: Contacts
+com.google.android.apps.messaging: Messages
+com.google.android.keep: Google Keep
+com.google.android.apps.subscriptions.red: Google One
+com.google.android.apps.walletnfcrel: Google Wallet
+com.google.android.apps.nbu.files: Files by Google
+com.google.android.apps.translate: Google Translate
+com.google.android.apps.fitness: Google Fit
+com.google.ar.lens: Google Lens
+com.google.android.play.games: Google Play Games
+com.google.android.apps.googleassistant: Google Assistant
+com.android.settings: Settings
+com.android.camera2: Camera
+com.android.systemui: System UI
+com.facebook.katana: Facebook
+com.facebook.orca: Messenger
+com.facebook.services: Facebook Services
+com.facebook.system: Facebook App Installer
+com.facebook.appmanager: Facebook App Manager
+com.instagram.android: Instagram
+com.whatsapp: WhatsApp
+com.whatsapp.w4b: WhatsApp Business
+org.telegram.messenger: Telegram
+com.zhiliaoapp.musically: TikTok
+com.ss.android.ugc.trill: TikTok
+com.twitter.android: X
+com.snapchat.android: Snapchat
+com.spotify.music: Spotify
+com.netflix.mediaclient: Netflix
+com.shopee.id: Shopee
+com.tokopedia.tkpd: Tokopedia
+com.lazada.android: Lazada
+com.gojek.app: Gojek
+com.grabtaxi.passenger: Grab
+id.dana: DANA
+ovo.id: OVO
+com.linkaja.customer: LinkAja
+com.microsoft.office.outlook: Outlook
+com.microsoft.office.officehubrow: Microsoft 365
+com.microsoft.skydrive: OneDrive
+com.linkedin.android: LinkedIn
+com.amazon.mShop.android.shopping: Amazon Shopping
+com.booking: Booking.com
+com.sec.android.app.samsungapps: Galaxy Store
+com.samsung.android.bixby.agent: Bixby Voice
+com.samsung.android.app.spage: Samsung Free
+com.samsung.android.game.gamehome: Game Launcher
+com.samsung.android.arzone: AR Zone
+com.samsung.android.app.tips: Samsung Tips
+com.samsung.android.kidsinstaller: Samsung Kids
+com.samsung.android.app.watchmanager: Galaxy Wearable
+com.samsung.android.oneconnect: SmartThings
+com.samsung.android.voc: Samsung Members
+com.sec.android.app.sbrowser: Samsung Internet
+com.samsung.android.messaging: Samsung Messages
+com.samsung.android.dialer: Samsung Phone
+com.samsung.android.app.notes: Samsung Notes
+com.samsung.android.calendar: Samsung Calendar
+com.samsung.android.email.provider: Samsung Email
+com.microsoft.appmanager: Link to Windows
+com.miui.analytics: MIUI Analytics
+com.miui.msa.global: MIUI System Ads
+com.xiaomi.glgm: Xiaomi Games
+com.xiaomi.mipicks: GetApps
+com.mi.globalbrowser: Mi Browser
+com.miui.videoplayer: Mi Video
+com.miui.player: Mi Music
+com.xiaomi.midrop: ShareMe
+com.miui.cleanmaster: Mi Cleaner
+com.miui.bugreport: MIUI Feedback
+com.miui.weather2: Weather
+com.miui.notes: Mi Notes
+com.miui.compass: Compass
+com.coloros.gamespace: Game Space
+com.heytap.market: App Market
+com.heytap.browser: OPPO Browser
+com.heytap.music: OPPO Music
+com.coloros.video: OPPO Video
+com.oppo.market: App Market
+com.heytap.themestore: Theme Store
+com.vivo.browser: vivo Browser
+com.vivo.appstore: V-Appstore
+com.vivo.game: vivo Games
+com.vivo.easyshare: EasyShare
+com.bbk.theme: iTheme
+com.vivo.hiboard: Jovi Home
+com.transsion.aivoiceassistant: Ella
+com.transsion.phonemaster: Phone Master
+com.transsnet.store: Palm Store
+com.talpa.hibrowser: HiBrowser
+com.transsion.carlcare: Carlcare
+com.transsion.magazineservice: Magazine Service
+com.transsion.theme: XTheme
+com.hoffnung: AHA Games
+net.bat.store: AHA Games
+com.lenovo.anyshare.gps: SHAREit
+cn.xender: Xender
+com.booking.aggregator: Booking.com
+com.opera.browser: Opera
+com.opera.mini.native: Opera Mini
+com.UCMobile.intl: UC Browser
+com.viber.voip: Viber
+jp.naver.line.android: LINE
+com.lemon.lvoverseas: CapCut
+com.canva.editor: Canva
+com.picsart.studio: Picsart
+com.adobe.lrmobile: Lightroom
+net.zedge.android: Zedge
+com.nemo.vidmate: VidMate
+com.snaptube.premium: Snaptube

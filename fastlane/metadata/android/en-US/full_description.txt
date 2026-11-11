@@ -1,0 +1,13 @@
+Sapu cleans and debloats your Android phone the careful way. Nothing is deleted outright: files move to a trash folder on your phone first and can be restored, preinstalled apps are removed for your user only and can be reinstalled, and everything Sapu does is written to a history you can read.
+
+Clean: scans shared storage for leftovers of apps you uninstalled, old APKs, incomplete downloads and thumbnails. Preview first, then sweep. Optionally runs Android's own cache eviction (the same as Settings > Storage > Clear cache).
+
+Apps: lists the preinstalled apps on your phone that Sapu's rules know are safe to remove (Samsung, Xiaomi, OPPO, vivo, Infinix/Tecno, Google), with per-app sizes and the date you last opened each one. Remove with a preview; restore any time. System, launcher, keyboard, dialer and Play packages are never offered.
+
+Optimize: compiles the apps you open most so they start faster, runs Android's background dexopt job now, and shows which apps are exempt from battery optimization or have not been opened for 90 days. Removes nothing.
+
+Trash: every sweep lands here first. Restore a whole run or delete it for good.
+
+Sapu needs Shizuku for the parts Android does not let a normal app do (reading other apps' folders, removing preinstalled apps). Shizuku is free, open source and works without root through a one-time wireless debugging pairing. Without Shizuku, Sapu still shows your storage and app list.
+
+WhatsApp, Telegram, bank, e-wallet, authenticator and password manager data is never touched. No ads, no tracking, no network access except checking Shizuku. Free software under GPL-3.0; the same rules database also powers the sapu command line tool for your computer.

@@ -1,0 +1,5 @@
+/sapu
+/sapu-*
+/dist/
+*.test
+.DS_Store

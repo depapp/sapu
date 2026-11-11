@@ -1,0 +1,28 @@
+# Disposable shared-storage targets for `sapu clean`. Each target is a shell-glob under
+# /sdcard plus an age rule; every match still goes through the deletion funnel.
+# Android/data/*/cache is not listed: the system evicts it itself in the "App caches" step of `sapu clean`.
+# name_id / note_id: Indonesian text for the app UI.
+# kind: dir | file. min_age_days: 0 means any age. running_guard: skip when the owning app runs.
+- {name: "Thumbnail caches", name_id: "Cache thumbnail", glob: "DCIM/.thumbnails", kind: dir, min_age_days: 0, note: "rebuilt by the gallery", note_id: "dibuat ulang oleh galeri"}
+- {name: "Thumbnail caches", name_id: "Cache thumbnail", glob: "Pictures/.thumbnails", kind: dir, min_age_days: 0}
+- {name: "Thumbnail caches", name_id: "Cache thumbnail", glob: "Movies/.thumbnails", kind: dir, min_age_days: 0}
+- {name: "Thumbnail caches", name_id: "Cache thumbnail", glob: "Music/.thumbnails", kind: dir, min_age_days: 0}
+- {name: "Thumbnail caches", name_id: "Cache thumbnail", glob: "Android/data/*/cache/.thumbnails", kind: dir, min_age_days: 0}
+- {name: "Lost clusters", name_id: "Klaster hilang", glob: "LOST.DIR", kind: dir, min_age_days: 0, note: "fsck leftovers", note_id: "sisa fsck"}
+- {name: "Installer APKs", name_id: "APK pemasang", glob: "Download/*.apk", kind: file, min_age_days: 7, note: "the app is installed or you have the file", note_id: "aplikasinya sudah terpasang atau berkasnya masih ada"}
+- {name: "Installer APKs", name_id: "APK pemasang", glob: "Download/*.apks", kind: file, min_age_days: 7}
+- {name: "Installer APKs", name_id: "APK pemasang", glob: "Download/*.xapk", kind: file, min_age_days: 7}
+- {name: "Installer APKs", name_id: "APK pemasang", glob: "Download/*/*.apk", kind: file, min_age_days: 7}
+- {name: "Incomplete downloads", name_id: "Unduhan tak selesai", glob: "Download/*.crdownload", kind: file, min_age_days: 1}
+- {name: "Incomplete downloads", name_id: "Unduhan tak selesai", glob: "Download/*.part", kind: file, min_age_days: 1}
+- {name: "Incomplete downloads", name_id: "Unduhan tak selesai", glob: "Download/*.tmp", kind: file, min_age_days: 1}
+- {name: "Incomplete downloads", name_id: "Unduhan tak selesai", glob: "Download/*.download", kind: file, min_age_days: 1}
+- {name: "Log files", name_id: "Berkas log", glob: "*.log", kind: file, min_age_days: 7}
+- {name: "Log files", name_id: "Berkas log", glob: "logs/*.log", kind: file, min_age_days: 7}
+- {name: "Log files", name_id: "Berkas log", glob: "Android/data/*/files/logs/*.log", kind: file, min_age_days: 7, running_guard: true}
+- {name: "Log files", name_id: "Berkas log", glob: "Android/data/*/files/log/*.log", kind: file, min_age_days: 7, running_guard: true}
+- {name: "Crash dumps", name_id: "Dump crash", glob: "Android/data/*/files/tombstones/*", kind: file, min_age_days: 1, running_guard: true}
+- {name: "Crash dumps", name_id: "Dump crash", glob: "Android/data/*/files/crash/*", kind: file, min_age_days: 1, running_guard: true}
+- {name: "Media trash", name_id: "Sampah media", glob: ".Trash", kind: dir, min_age_days: 0, note: "gallery trash folder of some OEM galleries", note_id: "folder sampah galeri pada beberapa galeri OEM"}
+- {name: "Media trash", name_id: "Sampah media", glob: "DCIM/.trash", kind: dir, min_age_days: 30}
+- {name: "Media trash", name_id: "Sampah media", glob: "Pictures/.trash", kind: dir, min_age_days: 30}

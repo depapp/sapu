@@ -1,0 +1,1 @@
+Per-app sizes and last-used dates in the Apps tab, a new Optimize tab (speed-profile compile of your most used apps, bg-dexopt, battery audit), Indonesian translation, signed release builds.

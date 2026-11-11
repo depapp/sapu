@@ -1,0 +1,13 @@
+Sapu membersihkan dan menghapus bloatware di ponsel Android kamu dengan hati-hati. Tidak ada yang langsung dihapus: file dipindahkan dulu ke folder tempat sampah di ponsel dan bisa dipulihkan, aplikasi bawaan hanya dihapus untuk pengguna kamu dan bisa dipasang lagi, dan semua yang Sapu lakukan tercatat di riwayat yang bisa kamu baca.
+
+Bersihkan: memindai penyimpanan bersama untuk sisa aplikasi yang sudah di-uninstall, APK lama, unduhan tidak selesai dan thumbnail. Pratinjau dulu, lalu sapu. Opsional menjalankan pembersihan cache bawaan Android (sama seperti Setelan > Penyimpanan > Hapus cache).
+
+Aplikasi: daftar aplikasi bawaan di ponsel kamu yang menurut aturan Sapu aman dihapus (Samsung, Xiaomi, OPPO, vivo, Infinix/Tecno, Google), lengkap dengan ukuran per aplikasi dan tanggal terakhir dibuka. Hapus dengan pratinjau; pulihkan kapan saja. Paket sistem, launcher, keyboard, telepon dan Play tidak pernah ditawarkan.
+
+Optimalkan: mengompilasi aplikasi yang paling sering kamu buka supaya lebih cepat terbuka, menjalankan bg-dexopt Android sekarang juga, dan menunjukkan aplikasi yang dikecualikan dari optimasi baterai atau tidak dibuka selama 90 hari. Tidak menghapus apa pun.
+
+Tempat sampah: setiap sapuan mendarat di sini dulu. Pulihkan satu sesi penuh atau hapus permanen.
+
+Sapu memerlukan Shizuku untuk hal yang tidak diizinkan Android bagi aplikasi biasa (membaca folder aplikasi lain, menghapus aplikasi bawaan). Shizuku gratis, open source dan bekerja tanpa root lewat pemasangan wireless debugging sekali saja. Tanpa Shizuku, Sapu tetap menampilkan penyimpanan dan daftar aplikasi.
+
+Data WhatsApp, Telegram, bank, e-wallet, authenticator dan pengelola kata sandi tidak pernah disentuh. Tanpa iklan, tanpa pelacakan, tanpa akses jaringan. Perangkat lunak bebas di bawah GPL-3.0; basis aturan yang sama juga dipakai alat baris perintah sapu di komputer.

@@ -1,0 +1,34 @@
+# F-Droid metadata for Sapu, ready to copy to fdroiddata/metadata/id.sapu.app.yml.
+# Submit: fork https://gitlab.com/fdroid/fdroiddata, add this file, open a merge request.
+# F-Droid builds from the tagged source and signs with its own key, so the F-Droid build
+# and the GitHub release APK (signed with our key) cannot update each other.
+# GitHub release APK signing certificate SHA-256 (for AllowedAPKSigningKeys if the build
+# is ever made reproducible): a2079b2dbe4f6d437670dbc1e8d7a3c5a1656de7d33ee5607b4186af778fb2d3
+Categories:
+  - System
+License: GPL-3.0-only
+AuthorName: Depa
+SourceCode: https://github.com/depapp/sapu
+IssueTracker: https://github.com/depapp/sapu/issues
+Changelog: https://github.com/depapp/sapu/blob/HEAD/CHANGELOG.md
+
+AutoName: Sapu
+
+RepoType: git
+Repo: https://github.com/depapp/sapu.git
+
+Builds:
+  - versionName: 0.2.0
+    versionCode: 2
+    commit: v0.2.0
+    subdir: android/app
+    gradle:
+      - yes
+    scandelete:
+      - android/app/build
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v[0-9.]+$
+UpdateCheckData: android/app/build.gradle.kts|versionCode = (\d+)|.|versionName = "([^"]+)"
+CurrentVersion: 0.2.0
+CurrentVersionCode: 2

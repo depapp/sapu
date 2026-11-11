@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- broom: handle and bristles -->
+    <path android:fillColor="#FFFFFF" android:pathData="M60,22 L66,28 L44,50 L38,44 Z" />
+    <path android:fillColor="#FFF3C4" android:pathData="M30,52 L46,52 L52,58 L56,86 L26,86 L30,58 Z" />
+    <path android:fillColor="#E0B850" android:pathData="M34,62 L36,86 M41,62 L41,86 M48,62 L46,86" android:strokeColor="#E0B850" android:strokeWidth="2" />
+</vector>

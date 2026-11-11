@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "description": "Sweep your Android clean: deep clean, debloat, analyze and optimize your phone over adb, no root",
+    "homepage": "https://github.com/depapp/sapu",
+    "license": "GPL-3.0-only",
+    "notes": "Needs adb on PATH: scoop install adb",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/depapp/sapu/releases/download/v0.2.0/sapu-windows-amd64.exe#/sapu.exe",
+            "hash": "ed8b75503627e73a10cd25a32954bd8f1673c2753faf7c273d98aa39e61fe0fc"
+        },
+        "arm64": {
+            "url": "https://github.com/depapp/sapu/releases/download/v0.2.0/sapu-windows-arm64.exe#/sapu.exe",
+            "hash": "030968609a3810b589adaa05d1273a71e4d00f3c47a3d15aee26fff479ac8d7f"
+        }
+    },
+    "bin": "sapu.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": { "url": "https://github.com/depapp/sapu/releases/download/v$version/sapu-windows-amd64.exe#/sapu.exe" },
+            "arm64": { "url": "https://github.com/depapp/sapu/releases/download/v$version/sapu-windows-arm64.exe#/sapu.exe" }
+        },
+        "hash": { "url": "$baseurl/SHA256SUMS" }
+    }
+}

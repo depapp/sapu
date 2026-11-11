@@ -1,0 +1,54 @@
+# Packages whose shared-storage folders Sapu never trashes automatically, even as leftovers,
+# because a user cannot regenerate what is inside (chat media, documents, money).
+# They still appear in previews as "kept: personal data".
+exact:
+  - com.whatsapp
+  - com.whatsapp.w4b
+  - org.telegram.messenger
+  - org.telegram.messenger.web
+  - org.thunderdog.challegram
+  - com.tencent.mm
+  - jp.naver.line.android
+  - com.viber.voip
+  - org.thoughtcrime.securesms
+  - com.discord
+  - com.instagram.android
+  - com.zhiliaoapp.musically          # TikTok
+  - com.ss.android.ugc.trill          # TikTok
+  - com.gojek.app
+  - com.grabtaxi.passenger
+  - ovo.id
+  - id.dana
+  - com.shopee.id
+  - com.tokopedia.tkpd
+  - id.co.bri.brimo
+  - com.bca
+  - id.bmri.livin
+  - src.com.bni
+  - com.btpn.dc                       # Jenius
+  - com.bankmandiri.mandirionline
+  - com.jago.digitalBanking
+  - id.co.bankbkemobile.digitalbank   # SeaBank
+  - com.google.android.apps.authenticator2
+  - com.authy.authy
+  - com.azure.authenticator
+  - com.agilebits.onepassword
+  - com.onepassword.android
+  - com.bitwarden.mobile
+  - com.x8bit.bitwarden
+  - com.lastpass.lpandroid
+  - keepass2android.keepass2android
+  - com.google.android.apps.photos
+  - com.google.android.apps.docs
+  - com.microsoft.skydrive
+  - com.dropbox.android
+  - com.nextcloud.client
+  - com.adobe.lrmobile
+  - com.lemon.lvoverseas                # CapCut
+  - com.vsco.cam
+  - com.canva.editor
+  - com.google.android.apps.recorder
+  - com.android.soundrecorder
+prefixes:
+  - id.co.                            # Indonesian banks
+  - com.bank

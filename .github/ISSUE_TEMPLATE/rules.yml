@@ -1,0 +1,22 @@
+name: Rules report (sapu probe)
+description: Help Sapu learn your phone. Paste the output of `sapu probe`; it contains no serial, account, user app names or file names.
+title: "rules: <brand> <model>"
+labels: [rules]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Run `sapu probe` with the phone connected and paste everything it prints below.
+        Preinstalled apps listed under "not in the rules database" are candidates for `protected_packages.yaml` or `bloatware.yaml`.
+  - type: textarea
+    id: probe
+    attributes:
+      label: sapu probe output
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What do you know about these apps?
+      description: Which of the unknown apps are safe to remove, which broke something when removed, which are essential on this phone.

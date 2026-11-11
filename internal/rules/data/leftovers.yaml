@@ -1,0 +1,48 @@
+# Folders at the root of shared storage that one app owns. Sapu offers them only when the
+# owning package is NOT installed (exact evidence, never name guessing), and never for
+# packages listed in data_protected.yaml. Paths are relative to /sdcard.
+- {path: WhatsApp, package: com.whatsapp}
+- {path: WhatsApp Business, package: com.whatsapp.w4b}
+- {path: Telegram, package: org.telegram.messenger}
+- {path: Tencent, package: com.tencent.mm}
+- {path: tencent, package: com.tencent.mm}
+- {path: Pictures/Instagram, package: com.instagram.android}
+- {path: Movies/Instagram, package: com.instagram.android}
+- {path: Pictures/Twitter, package: com.twitter.android}
+- {path: Pictures/Messenger, package: com.facebook.orca}
+- {path: Movies/Messenger, package: com.facebook.orca}
+- {path: Pictures/Facebook, package: com.facebook.katana}
+- {path: Snapchat, package: com.snapchat.android}
+- {path: Pictures/Snapchat, package: com.snapchat.android}
+- {path: TikTok, package: com.zhiliaoapp.musically}
+- {path: Movies/TikTok, package: com.zhiliaoapp.musically}
+- {path: Pictures/Shopee, package: com.shopee.id}
+- {path: Pictures/Tokopedia, package: com.tokopedia.tkpd}
+- {path: Download/Telegram, package: org.telegram.messenger}
+- {path: Download/Line, package: jp.naver.line.android}
+- {path: Download/ShareMe, package: com.xiaomi.midrop}
+- {path: MIUI/ShareMe, package: com.xiaomi.midrop}
+- {path: ShareIt, package: com.lenovo.anyshare.gps}
+- {path: SHAREit, package: com.lenovo.anyshare.gps}
+- {path: Xender, package: cn.xender}
+- {path: Zedge, package: net.zedge.android}
+- {path: VidMate, package: com.nemo.vidmate}
+- {path: snaptube, package: com.snaptube.premium}
+- {path: UCDownloads, package: com.UCMobile.intl}
+- {path: Pictures/Viber, package: com.viber.voip}
+- {path: viber, package: com.viber.voip}
+- {path: Pictures/Screenshots, package: __never__}   # user data, listed so analyze can name it
+- {path: Movies/CapCut, package: com.lemon.lvoverseas}
+- {path: Pictures/CapCut, package: com.lemon.lvoverseas}
+- {path: Pictures/Canva, package: com.canva.editor}
+- {path: Pictures/Picsart, package: com.picsart.studio}
+- {path: Pictures/Lightroom, package: com.adobe.lrmobile}
+- {path: Music/Spotify, package: com.spotify.music}
+- {path: Podcasts/Spotify, package: com.spotify.music}
+- {path: JOOX, package: com.tencent.ibg.joox}
+- {path: Pictures/Pinterest, package: com.pinterest}
+- {path: Pictures/Reddit, package: com.reddit.frontpage}
+- {path: Pictures/Telegram, package: org.telegram.messenger}
+- {path: Movies/Telegram, package: org.telegram.messenger}
+- {path: Music/Telegram, package: org.telegram.messenger}
+- {path: Documents/Telegram, package: org.telegram.messenger}
